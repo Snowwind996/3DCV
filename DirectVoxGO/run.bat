@@ -1,0 +1,1 @@
+python tools/imgs2poses.py data/custom/Airpods/          

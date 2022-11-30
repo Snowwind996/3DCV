@@ -1,0 +1,161 @@
+Directory structure check: PASS.
+Need to run COLMAP
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms" ...
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqeglfs.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqeglfs.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "eglfs"
+        ]
+    },
+    "archreq": 0,
+    "className": "QEglFSIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+
+
+Got keys from plugin meta data ("eglfs")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqlinuxfb.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqlinuxfb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "linuxfb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QLinuxFbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+
+
+Got keys from plugin meta data ("linuxfb")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimal.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimal"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+
+
+Got keys from plugin meta data ("minimal")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimalegl.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimalegl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimalegl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalEglIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+
+
+Got keys from plugin meta data ("minimalegl")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqoffscreen.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqoffscreen.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "offscreen"
+        ]
+    },
+    "archreq": 0,
+    "className": "QOffscreenIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+
+
+Got keys from plugin meta data ("offscreen")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqvnc.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqvnc.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "vnc"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVncIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+
+
+Got keys from plugin meta data ("vnc")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "xcb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+
+
+Got keys from plugin meta data ("xcb")
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/bin/platforms" ...
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so"
+qt.qpa.xcb: could not connect to display 
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, xcb.
+
+*** Aborted at 1669822580 (unix time) try "date -d @1669822580" if you are using GNU date ***
+PC: @     0x7faeb918918b gsignal
+*** SIGABRT (@0x3e800007d82) received by PID 32130 (TID 0x7faeb4784900) from PID 32130; stack trace: ***
+    @     0x7faebad74631 (unknown)
+    @     0x7faeba2b83c0 (unknown)
+    @     0x7faeb918918b gsignal
+    @     0x7faeb9168859 abort
+    @     0x7faeb974aaad QMessageLogger::fatal()
+    @     0x7faeb9d2c7ae QGuiApplicationPrivate::createPlatformIntegration()
+    @     0x7faeb9d2d708 QGuiApplicationPrivate::createEventDispatcher()
+    @     0x7faeb9951f55 QCoreApplicationPrivate::init()
+    @     0x7faeb9d2f543 QGuiApplicationPrivate::init()
+    @     0x7faeba4393bd QApplicationPrivate::init()
+    @     0x55a25dec9602 RunFeatureExtractor()
+    @     0x55a25deb5eaf main
+    @     0x7faeb916a0b3 __libc_start_main
+    @     0x55a25deb9f6e _start
+Traceback (most recent call last):
+  File "tools/imgs2poses.py", line 39, in <module>
+    gen_poses(args.scenedir, args.match_type, factors=[2,4,8])
+  File "/home/featurize/work/DirectVoxGO/tools/colmap_utils/pose_utils.py", line 158, in gen_poses
+    run_colmap(basedir, match_type)
+  File "/home/featurize/work/DirectVoxGO/tools/colmap_utils/colmap_wrapper.py", line 36, in run_colmap
+    feat_output = ( subprocess.check_output(feature_extractor_args, universal_newlines=True) )
+  File "/environment/miniconda3/lib/python3.7/subprocess.py", line 411, in check_output
+    **kwargs).stdout
+  File "/environment/miniconda3/lib/python3.7/subprocess.py", line 512, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['colmap', 'feature_extractor', '--database_path', 'data/custom/Airpods/database.db', '--image_path', 'data/custom/Airpods/source', '--ImageReader.single_camera', '1']' died with <Signals.SIGABRT: 6>.
+(base) ➜  DirectVoxGO git:(main) ✗ 
+(base) ➜  DirectVoxGO git:(main) ✗ 

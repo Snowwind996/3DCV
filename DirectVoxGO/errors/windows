@@ -1,0 +1,27 @@
+Need to run COLMAP
+data/custom/Airpods/source
+Traceback (most recent call last):
+  File "E:\code\DirectVoxGO\tools\imgs2poses.py", line 42, in <module>
+    gen_poses(args.scenedir, args.match_type, factors=[2,4,8])
+  File "E:\code\DirectVoxGO\tools\colmap_utils\pose_utils.py", line 158, in gen_poses
+    run_colmap(basedir, match_type)
+  File "E:\code\DirectVoxGO\tools\colmap_utils\colmap_wrapper.py", line 36, in run_colmap
+    feat_output = ( subprocess.check_output(feature_extractor_args, universal_newlines=True) )
+  File "D:\anaconda3\lib\subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "D:\anaconda3\lib\subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "D:\anaconda3\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "D:\anaconda3\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+colmap feature_extractor --database_path data/custom/Airpods/database.db --image_path ./data/custom/Airpods/source
+Processed file [31/32]
+  Name:            IMG_4908.jpg
+  ERROR: Failed to read image file format.
+Processed file [32/32]
+  Name:            IMG_4909.jpg
+  ERROR: Failed to read image file format.
+Elapsed time: 0.000 [minutes]
