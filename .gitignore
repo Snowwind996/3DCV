@@ -3,5 +3,5 @@
 *.npy
 *.npz
 *.dae
-data
+
 logs
